@@ -74,7 +74,7 @@ In `ios/YourApp/AppDelegate.swift`, update the bundle loading logic:
 #endif
 ```
 
-### **React Native Version `>= 0.76.x.x && < 0.77`**
+### **React Native Version `< 0.77`**
 
 #### **Modify `AppDelegate.swift`**
 
