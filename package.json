@@ -1,8 +1,8 @@
 {
-  "name": "co-push",
-  "version": "1.0.14",
-  "main": "index.js",
-  "type":"module",
+"name": "co-push",
+"version": "1.0.20",
+"main": "./index.js",
+"type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,16 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/coftware/co-push.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coftware/co-push/issues"
   },
+   "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
   "homepage": "https://github.com/coftware/co-push#readme",
   "description": "",
   "dependencies": {
-    "react-native-fs": "^2.20.0",
-    "react-native-restart": "^0.0.27"
+    "react-native-fs": "^2.20.0"
   }
 }
