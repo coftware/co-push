@@ -111,10 +111,12 @@ This ensures the app loads the downloaded bundle instead of the built-in one.
 
 ## 🎯 How It Works
 
-1. `checkForUpdate()` checks the update server for a new bundle.
-2. If an update is available, it prompts the user to download it.
-3. The bundle is downloaded and stored in the app's document directory.
-4. The app is restarted to apply the update.
+1. 'checkForUpdate()' checks the update server for a new bundle.
+2. If an update is available, the user will download it on app launch.
+3. The downloaded bundle is stored in the app's document directory.
+4. The app restarts to apply the update.
+
+
 
 ---
 
