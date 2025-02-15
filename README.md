@@ -20,7 +20,7 @@ Make sure you have the following dependencies installed in your React Native pro
 
 ([`npm install react-native-fs`](https://github.com/itinance/react-native-fs))
 
-## 🔧 Setup
+## 🛠️ Setup
 
 ### **1️⃣ Import and Initialize**
 
@@ -31,6 +31,14 @@ CoPush.checkForUpdate('API_KEY','CURRENT_VERSION');
 ```
 
 Replace `'API_KEY'` and `'CURRENT_VERSION'` with your update server URL.
+
+---
+
+## 🌐 Get Your API Key
+
+To use `co-push`, you need an API key. You can obtain your `API_KEY` from [co-push.com](https://co-push.com/).
+
+Visit **[co-push.com](https://co-push.com/)** to create an account and get your API key.
 
 ---
 
@@ -92,9 +100,8 @@ In `ios/YourApp/AppDelegate.mm`, update the bundle loading logic:
       return [NSURL fileURLWithPath:bundlePath];
   }
 
-  // Eğer güncellenmiş bundle yoksa, assets içindeki main.jsbundle kullan
+  // If no updated bundle is found, use the main.jsbundle in assets
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-
 #endif
 ```
 
@@ -143,7 +150,7 @@ export default App;
 
 ---
 
-## 📜 License
+## 🌜 License
 
 MIT License. Feel free to use and contribute!
 
