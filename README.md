@@ -9,6 +9,10 @@
 ```sh
 npm install co-push
 ```
+or
+```sh
+yarn add co-push
+```
 
 ### Peer Dependencies
 
