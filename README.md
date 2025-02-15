@@ -14,22 +14,19 @@ npm install co-push
 
 Make sure you have the following dependencies installed in your React Native project:
 
-```sh
-npm install react-native-fs react-native-restart
-```
+([`npm install react-native-fs`](https://github.com/itinance/react-native-fs))
 
 ## 🔧 Setup
 
 ### **1️⃣ Import and Initialize**
 
 ```javascript
-import Updater from 'co-push';
+import CoPush from 'co-push';
 
-const updater = new Updater('API_KEY');
-updater.checkForUpdate();
+CoPush.checkForUpdate('API_KEY','CURRENT_VERSION');
 ```
 
-Replace `'API_KEY'` with your update server URL.
+Replace `'API_KEY'` and `'CURRENT_VERSION'` with your update server URL.
 
 ---
 
@@ -115,12 +112,11 @@ This ensures the app loads the downloaded bundle instead of the built-in one.
 ```javascript
 import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
-import Updater from 'co-push';
+import CoPush from 'co-push';
 
 const App = () => {
     useEffect(() => {
-        const updater = new Updater('API_KEY');
-        updater.checkForUpdate();
+      CoPush.checkForUpdate('API_KEY','CURRENT_VERSION');
     }, []);
     
     return (
